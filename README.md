@@ -2,10 +2,12 @@
 Do It Yourself Remote Access to Locally Stored video to Unsupported Arlo Base Station(s).
 (or get your bird out of EOL jail)
 
-## Problem
-Cameras for this proprietary eco-system push recordings to the vendor's cloud storage service thereby allowing authorized access to such recording virtually from anywhere using a web browser or phone app. Furthermore, those same recordings (except for "manually" initiated recordings), can also be alternatively saved/mirrored on local storage (known as "Local Storage Backups") when enabled by a "base station".
+![](https://raw.githubusercontent.com/shissam/arloRATLS-diy/master/assets/arloRATLS-diy.png)
 
-Local storage backup only available for specific [camera models and base stations](ihttps://kb.arlo.com/en_US/1146857). Such recordings are made to a supplied USB mass storage device inserted externally into the base station. For all base stations that support local storage backup, those recordings can be accessed by physically removing the USB mass storage device from the base station and subsequently reviewed on another computer.
+## Problem
+Cameras for this proprietary eco-system push recordings to the vendor's cloud storage service thereby allowing authorized access to such recordings virtually from anywhere using a web browser or phone app. Furthermore, those same recordings (except for "manually" initiated recordings), can also be alternatively saved/mirrored on local storage (known as "Local Storage Backups") when enabled by a "base station".
+
+Local storage backups are only available for specific [camera models and base stations](ihttps://kb.arlo.com/en_US/1146857). Such recordings are made to a supplied USB mass storage device inserted externally into the base station. For all base stations that support local storage backup, those recordings can be accessed by physically removing the USB mass storage device from the base station and subsequently reviewed on another computer.
 
 There is, however, a subset of base stations which permit [remote acess to location storage backup](https://kb.arlo.com/000062337/What-is-Direct-Storage-Access-and-how-do-I-use-it) (a.k.a., RATLS). When enabled, with the proper base station, these locally stored backups are integrated into the web brower or phone application's ```Library```.
 
@@ -21,7 +23,7 @@ There are a number of limitations what come with the vendor's RATLS approach:
 
 Starting in 2023, the vendor has announced [End Of Life Policy](https://community.arlo.com/t5/Arlo/End-Of-Life-Policy/m-p/1893275#M84782) meaning that ```legacy``` products will no longer push recordings to the vendor's cloud storage service completely defeating the ability to access historical recordings which were part of the vendor's marketing and service agreement (implied through the vendor's explicit marketing literatire) with owners which was advertised and maintained from [2016-Oct-12](https://web.archive.org/web/20161012153328/http://www.arlo.com/en-us/products/arlo/default.aspx) to [2020-May-27](https://web.archive.org/web/20200527223637/https://www.arlo.com/en-us/products/arlo/default.aspx) based on third-party web site captures.
 
-Furthermore, [Automatic email alerts and push notifications may be reduced or eliminated](https://downloads.arlo.com/images/PDFs/EOL_Policy/Arlo_End-of-Life-Policy-2022.pdf), meaning that owners _may_ have no idea that something has transpired (i.e., motion or audio detection) thereby placing the onus on the owner determine (by some means) that there is an event that needs attention. And if by some "magic" the owner is made aware that something has occurred, the owner must access the locally stored videos as a means determine the extent of the event.
+Furthermore, [Automatic email alerts and push notifications may be reduced or eliminated](https://downloads.arlo.com/images/PDFs/EOL_Policy/Arlo_End-of-Life-Policy-2022.pdf), meaning that owners _may_ have no idea that something has transpired (i.e., motion or audio detection) thereby placing the onus on the owner to determine (by some means) that there is an event that needs attention. And if by some "magic" the owner is made aware that something has occurred, the owner must access the locally stored videos as a means determine the extent of the event.
 
 ## Impact
 
@@ -32,14 +34,14 @@ This means for products which include base stations without the ability to acces
 
 ## arloRATLS-diy: An Approach
 
-The goal of this approach is to overcome some of the short-falls of the vendor's RATLS as well as preserving some of the capabilities brought on by the EOL announcement. Most specifically:
+The goal of this approach is to overcome some of the short-falls of the vendor's RATLS as well as preserving some of the capabilities lost by the EOL announcement. Most specifically:
 * Support base stations that are not supported by the vendor's RATLS
 * Support access to locally stored recordings beyond the 30 day limit
 * Support thumbnails for locally stored videos
 * (TODO) Support deletion of locally stored videos
 
 However, the vendor's eco-system does inhibit overcoming specific limitations which are beyond ```arloRATLS-diy```:
-* LAN vs. WAN access to ```arloRATLS-diy```: this defined approach does *NOT* preclude the use of private cloud storage but the approach within continues to use LAN access via VPN.
+* LAN vs. WAN access to ```arloRATLS-diy```: this defined approach does *NOT* preclude the use of private cloud storage but the approach within continues to use WAN to LAN access via (self-hosted) VPN.
 * Vendor's web brower or phone app approach cannot be "pointed" to ```arloRATLS-diy```: this defined approach requires your own (i.e., ```diy```) web brower for this access.
 
 ### arloRATLS-diy: A Recipe
