@@ -1,8 +1,9 @@
 # arloRATLS-diy
-Do It Yourself Remote Access to Locally Stored video to Unsupported Arlo Base Station(s).
-(or get your bird out of EOL jail)
+Do It Yourself Remote Access to Locally Stored video on Unsupported Arlo Base Station(s).
 
 ![](https://raw.githubusercontent.com/shissam/arloRATLS-diy/master/assets/arloRATLS-diy.png)
+
+(or get your bird out of EOL jail)
 
 ## Problem
 Cameras for this proprietary eco-system push recordings to the vendor's cloud storage service thereby allowing authorized access to such recordings virtually from anywhere using a web browser or phone app. Furthermore, those same recordings (except for "manually" initiated recordings), can also be alternatively saved/mirrored on local storage (known as "Local Storage Backups") when enabled by a "base station".
