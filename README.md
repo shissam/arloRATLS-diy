@@ -48,3 +48,17 @@ However, the vendor's eco-system does inhibit overcoming specific limitations wh
 ### arloRATLS-diy: A Recipe
 
 COMING SOON
+
+#### Hardware
+
+* Base station which supports locally stored video backups
+* A device(1) which supports the Linux USB Gadget(2) (e.g., Raspberry Pi 2 Zero)
+* A device(1) which supports backend services (e.g., web server, ffmpeg)
+* An external mass storage for longterm video backups (e.g., GB to TB storage)
+
+(1) these two devices could be the same device, this approach elected to separate these two devices.
+(2) [here](https://magpi.raspberrypi.com/articles/pi-zero-w-smart-usb-flash-drive),[here](https://forums.raspberrypi.com/viewtopic.php?t=331867),[here](https://github.com/thagrol/Guides/blob/main/mass-storage-gadget.pdf),[here](https://github.com/kmpm/rpi-usb-gadget), and [here](https://linux-sunxi.org/USB_Gadget/Mass_storage).
+
+#### Software
+
+COMING SOON
