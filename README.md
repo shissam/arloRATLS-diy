@@ -52,8 +52,8 @@ COMING SOON
 #### Hardware
 
 * Base station which supports locally stored video backups
-* A device<i>(1)</i> which supports the Linux USB Gadget<i>(2)</i> (e.g., Raspberry Pi 2 Zero)
-* A device<i>(1)</i> which supports backend services (e.g., web server, ffmpeg)
+* A device<i><sup>(1)</sup></i> which supports the Linux USB Gadget<i><sup>(2)</sup></i> (e.g., Raspberry Pi 2 Zero)
+* A device<i><sup>(1)</sup></i> which supports backend services (e.g., web server, ffmpeg)
 * An external mass storage for longterm video backups (e.g., GB to TB storage)
 
 _(1) these two devices could be the same device, this approach elected to separate these two devices._<br>
