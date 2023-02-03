@@ -16,8 +16,11 @@ There are a number of limitations what come with the vendor's RATLS approach:
 * Not all base stations support RATLS
 * Manually initiatied reocrdings are not locally stored
 * RATLS only supports viewing of locally stored videos for the last 30 days
+* RATLS only allows access to the locally stored videos via the cell phone app
+* RATLS only allows access to the locally stored videos through the primary account
 * RATLS is only supported on the LAN (WAN access required VPN or opening ports from WAN to LAN)
 * Locally stored videos will not have thumbnails viewable from the ```Library```
+* Locally stored videos must be downloaded before they can be viewed
 * Locally stored videos cannot be deleted remotely from the base stations (requires removing the USB mass storage device)
 
 ## Compounding Problem
