@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>arloRATLS DIY</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body>
+
+<div id="topNAV" class="sticky">
+ <div class="diyfloat">
+   <!-- TODO: https://stackoverflow.com/questions/2099201/javascript-hard-refresh-of-current-page/70901317#70901317 -->
+   <img id="diyRATLS" width=100 style="display:inline" onclick="window.location.href=window.location.href" src="assets/alogo11.gif"></img>
+   <img id="diyRED" class="imtip" width=50 onclick="window.location.href=window.location.href" src="assets/diyRED.png"></img>
+ </div>
+ <img id="leftarrow" width="7%" style="z-index:10;top:0px;left:20px;position:relative;display:inline" onclick="decrDate();" src="assets/arloArrowleft.png">&nbsp;</img>
+ <img id="rightarrow" width="7%" style="z-index:10;top:0px;left:445px;position:relative;display:inline;" onclick="incrDate();" src="assets/arloArrowleft.png" class="rotate180">&nbsp;</img>
+ <img id="refresharrow" width="7%" style="z-index:10;top:0px;left:525px;position:relative;display:inline;" onclick="loadLibraryPage(currentPage);" src="assets/arloArrowleft.png" class="rotate90">&nbsp;</img>
+ <div class="vertical-center">
+   <input type="date" id="libDate" name="libDate" onchange="dateExtend()">
+   <p align="center" id="dow" style="font-size:30px;top:0px;left:0px;position:relative;display:inline">DOW&nbsp;</p>
+   <!-- TODO: button onClick="document.body.classList.toggle('dark-mode')">Dark</button -->
+ </div>
+</div>
+
+<div id="libView" style="z-index:-1;width: 100%;">
+    <!-- filled in by script function loadLibraryPage() -->
+<div>
+
+<!-- pull in scripts -->
+<script src="assets/js/arloRATLS.js"></script>
+
+<!-- start here, main boots loadLibraryPage() -->
+<script>document.getElementById("topNAV").style.minWidth = "850px";</script>
+<script>document.getElementById("dow").innerHTML = dowOn(currentPage);</script>
+<script>loadLibraryPage(currentPage);</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+div.diyfloat {
+  position: relative;
+  display: inline;
+}
+
+.imtip {
+  position: absolute;
+  bottom: 5px;
+  right: 2px;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 0px;
+  #border: 2px solid #4CAF50;
+  #background-color: #cae8ca;
+  border: 2px solid #2ECD91;
+  background-color: #152934;
+  color: white;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 220px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+input[type="date"] {
+    font-size: 30px;
+    color: white;
+    background-color: #152934;
+}
