@@ -64,4 +64,15 @@ _(2) [here](https://magpi.raspberrypi.com/articles/pi-zero-w-smart-usb-flash-dri
 
 #### Software
 
-COMING SOON
+Beyond what is available with typical install of a Linux/debian distribution (e.g., Raspberry Pi OS, raspbian, etc. ):
+
+* COMING SOON: subscribes to base station, camera attribute changes
+* [nginx](https://singleboardblog.com/install-nginx-on-raspberry-pi/): presents the ```arloRATLS-diy``` library
+* [Let's Encrypt](https://pimylifeup.com/raspberry-pi-ssl-lets-encrypt/): some features are only supported by browsers that require a secure server
+* [OpenVPN](https://tecadmin.net/install-openvpn-debian-10/): enable WAN to LAN access via VPN
+* [ffmpeg](https://linuxhint.com/install-ffmpeg-raspberry-pi/): thumbnail generation
+* [jq](https://lindevs.com/install-jq-on-raspberry-pi): parse video metadata files in ```json``` format
+* COMING SOON: sending email (and SMS) notifications
+* browser to view the ```arloRATLS-diy``` library, tested with Chrome and Safari (desktop and iphone)
+
+MORE COMING SOON
