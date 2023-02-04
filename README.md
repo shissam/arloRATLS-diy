@@ -48,6 +48,10 @@ However, the vendor's eco-system does inhibit overcoming specific limitations wh
 * LAN vs. WAN access to ```arloRATLS-diy```: this defined approach does *NOT* preclude the use of private cloud storage but the approach within continues to use WAN to LAN access via (self-hosted) VPN.
 * Vendor's web brower or phone app approach cannot be "pointed" to ```arloRATLS-diy```: this defined approach requires your own (i.e., ```diy```) web brower for this access.
 
+### Screenshot
+
+![](https://raw.githubusercontent.com/shissam/arloRATLS-diy/master/assets/arloRATLS-diy-screenShot.jpg)
+
 ### arloRATLS-diy: A Recipe
 
 COMING SOON
