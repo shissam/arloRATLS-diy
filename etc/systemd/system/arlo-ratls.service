@@ -1,0 +1,23 @@
+#
+# sudo ln -s /home/pi/prod/systemd/system/arlo-ratls.service /etc/systemd/system/arlo-ratls.service
+# systemctl daemon-reload
+#
+[Unit]
+Description=Arlo Remote Access to Local Storage Service
+After=network.target network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+StartLimitInterval=60s
+StartLimitBurst=3
+User=pi
+Group=pi
+SyslogIdentifier=arlo-ratls
+ExecStart=/bin/bash /home/pi/prod/bin/arlo-ratls.sh
+ExecStop=/bin/kill -TERM $MAINPID
+
+[Install]
+WantedBy=multi-user.target

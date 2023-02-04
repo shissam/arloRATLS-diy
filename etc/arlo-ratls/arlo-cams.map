@@ -1,0 +1,13 @@
+#
+#
+#
+
+declare -A DEVICEMAP=(
+      [NCC1701UFP01A]="Camera 01" \
+      [NCC1017UFP02A]="Camera 02" \
+      [NCC1631UFP03A]="Camera 03" \
+      [NCC1709UFP04A]="Camera 04" \
+      [NCC1717UFP05A]="Camera 05"
+)
+
+
