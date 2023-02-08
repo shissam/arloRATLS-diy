@@ -338,8 +338,11 @@ do
      MOVED_TO)
        ${dryrun} processVideo "${DIR}" "${FILE}"
        if [ "${?}" -eq "1" ]; then
-          "${_logger}" -t "${_logname}" -i  "processVideo Failed"
-          exit -1
+          "${_logger}" -t "${_logname}" -i  "retry processVideo on ${FILE} at ${DIR}"
+          ${dryrun} processVideo "${DIR}" "${FILE}"
+          if [ "${?}" -eq "1" ]; then
+             "${_logger}" -t "${_logname}" -i  "processVideo Failed"
+          fi
        fi
        ;;
      *) "${_logger}" -t "${_logname}" -i  "some else, ${EVENT}, occurred with ${FILE}" ;;
