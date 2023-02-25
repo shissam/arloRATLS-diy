@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-#
+# TODO: shellcheck -e2086,2162,2027,2145,2034,1090,2230,2196,2001,2046,2166,1117
 #
 
 processVideo()
@@ -268,7 +268,7 @@ testing="false"
 testobj=""
 verbose="false"
 
-while getopts “l:m:nrt:v” opt; do
+while getopts "l:m:nrt:v" opt; do
   case $opt in
     l) logging="true"; _logname="${OPTARG}" ;;
     m) logging="true"; _logmesg="${OPTARG}" ;;
@@ -281,11 +281,20 @@ while getopts “l:m:nrt:v” opt; do
 
 	OPTIONS
 
+	-h:     this message
 	-l:     log action and syslog name for logging
 	-m:     log action and syslog message for logging
 	-r:     rebuild all databases
 	-t:	test (single file or folder) (for rebuild cmd only)
 	-v:	additional messages to log
+
+	EXAMPLE:
+
+	Process a single recording:
+	./arlo-ratls.sh -v -r -t /path/arlo/metadata/NCC1701UFP01A_000006af_20230223_103636.meta
+
+	Process a whole day of recordings:
+	./arlo-ratls.sh -v -r -t /path/arlo/archive/2022-05-02_2023-01-01/metadata/20221002/
 
 	OPTSEOF
        exit 1
