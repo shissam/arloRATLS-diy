@@ -3,6 +3,8 @@
 #
 # TODO: shellcheck -e2086,2162,2027,2145,2034,1090,2230,2196,2001,2046,2166,1117
 #
+# TODO: test workflow to do
+#
 
 processVideo()
 {
