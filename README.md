@@ -54,7 +54,7 @@ However, the vendor's eco-system does inhibit overcoming specific limitations wh
 
 ### arloRATLS-diy: A Recipe
 
-COMING SOON
+![](https://raw.githubusercontent.com/shissam/arloRATLS-diy/master/assets/arloRATLS-diy-arch.png)
 
 #### Hardware
 
@@ -70,13 +70,15 @@ _(2) [here](https://magpi.raspberrypi.com/articles/pi-zero-w-smart-usb-flash-dri
 
 Beyond what is available with typical install of a Linux/debian distribution (e.g., Raspberry Pi OS, raspbian, etc. ):
 
-* COMING SOON: subscribes to base station, camera attribute changes
+* [pyaarlo](https://github.com/twrecked/pyaarlo): subscribes to base station, camera attribute changes
 * [nginx](https://singleboardblog.com/install-nginx-on-raspberry-pi/): presents the ```arloRATLS-diy``` library
 * [Let's Encrypt](https://pimylifeup.com/raspberry-pi-ssl-lets-encrypt/): some features are only supported by browsers that require a secure server
 * [OpenVPN](https://tecadmin.net/install-openvpn-debian-10/): enable WAN to LAN access via VPN
 * [ffmpeg](https://linuxhint.com/install-ffmpeg-raspberry-pi/): thumbnail generation
 * [jq](https://lindevs.com/install-jq-on-raspberry-pi): parse video metadata files in ```json``` format
-* COMING SOON: sending email (and SMS) notifications
+* [swaks](https://github.com/jetmore/swaks): sending email (and SMS) notifications<i><sup>(3)</sup></i>
 * browser to view the ```arloRATLS-diy``` library, tested with Chrome and Safari (desktop and iphone)
+
+_(3) [using cellphone provider email/SMS gateways](https://en.wikipedia.org/wiki/SMS_gateway)_
 
 MORE COMING SOON
